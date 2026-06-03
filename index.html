@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-BmUcxhrJ.js"></script>
+    <script type="module" crossorigin src="./assets/index-CTA-yOGa.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DKwl_nIp.css">
   </head>
   <body class="page">
@@ -53,6 +53,11 @@
                 id="user-name"
                 class="popup__input popup__input_type_name"
                 placeholder="Имя"
+                required
+                minlength="1"
+                maxlength="40"
+                pattern="[A-Za-zА-ЯЁа-яё\s-]+"
+                data-error="Допустимы только буквы, пробелы и дефисы"
               />
               <span class="popup__error" id="user-name-error"></span>
             </label>
@@ -63,6 +68,11 @@
                 id="user-description"
                 class="popup__input popup__input_type_description"
                 placeholder="Занятие"
+                required
+                minlength="1"
+                maxlength="200"
+                pattern="[A-Za-zА-ЯЁа-яё\s-]+"
+                data-error="Допустимы только буквы, пробелы и дефисы"
               />
               <span class="popup__error" id="user-description-error"></span>
             </label>
@@ -88,6 +98,9 @@
                 id="place-name"
                 class="popup__input popup__input_type_card-name"
                 placeholder="Название"
+                required
+                minlength="2"
+                maxlength="30"
               />
               <span class="popup__error" id="place-name-error"></span>
             </label>
@@ -98,6 +111,7 @@
                 id="place-link"
                 class="popup__input popup__input_type_url"
                 placeholder="Ссылка на картинку"
+                required
               />
               <span class="popup__error" id="place-link-error"></span>
             </label>
@@ -131,6 +145,7 @@
                 id="user-avatar"
                 class="popup__input popup__input_type_avatar"
                 placeholder="Ссылка на изображение"
+                required
               />
               <span class="popup__error" id="user-avatar-error"></span>
             </label>

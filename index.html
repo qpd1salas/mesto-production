@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-1uniobyc.js"></script>
+    <script type="module" crossorigin src="./assets/index-Dphc8O48.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DKwl_nIp.css">
   </head>
   <body class="page">
@@ -56,8 +56,8 @@
                 required
                 minlength="2"
                 maxlength="40"
-                pattern="[A-Za-zА-ЯЁа-яё\s-]+"
-                data-error="Допустимы только буквы, пробелы и дефисы"
+                pattern="[A-Za-zА-ЯЁа-яё\- ]+"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
               <span class="popup__error" id="user-name-error"></span>
             </label>
@@ -71,14 +71,15 @@
                 required
                 minlength="2"
                 maxlength="200"
-                pattern="[A-Za-zА-ЯЁа-яё\s-]+"
-                data-error="Допустимы только буквы, пробелы и дефисы"
+                pattern="[A-Za-zА-ЯЁа-яё\- ]+"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
               <span class="popup__error" id="user-description-error"></span>
             </label>
             <button
               type="submit"
-              class="button popup__button"
+              class="button popup__button popup__button_disabled"
+              disabled
             >
               Сохранить
             </button>
@@ -101,6 +102,8 @@
                 required
                 minlength="2"
                 maxlength="30"
+                pattern="[A-Za-zА-ЯЁа-яё\- ]+"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
               <span class="popup__error" id="place-name-error"></span>
             </label>
@@ -117,7 +120,8 @@
             </label>
             <button
               type="submit"
-              class="button popup__button"
+              class="button popup__button popup__button_disabled"
+              disabled
             >
               Создать
             </button>
@@ -151,7 +155,8 @@
             </label>
             <button
               type="submit"
-              class="button popup__button"
+              class="button popup__button popup__button_disabled"
+              disabled
             >
               Сохранить
             </button>
